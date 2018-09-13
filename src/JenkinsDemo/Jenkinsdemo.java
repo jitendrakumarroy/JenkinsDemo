@@ -1,5 +1,6 @@
 package JenkinsDemo;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -15,6 +16,10 @@ public class Jenkinsdemo {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com");
 		System.out.println(driver.getTitle());
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("jitendra.r@bravvura.in");
+		driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("Jitendra@26");
+		driver.findElement(By.xpath("//input[@type='submit']")).click();
+		System.out.println(driver.getCurrentUrl());
 		driver.quit();
 
 	}

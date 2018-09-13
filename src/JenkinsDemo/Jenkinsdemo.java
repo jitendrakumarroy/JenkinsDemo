@@ -15,6 +15,7 @@ public class Jenkinsdemo {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com");
+		driver.manage().window().maximize();
 		System.out.println(driver.getTitle());
 		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("jitendra.r@bravvura.in");
 		driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("Jitendra@26");

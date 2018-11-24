@@ -21,7 +21,8 @@ public class Jenkinsdemo {
 		driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("Jitendra@26");
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		System.out.println(driver.getCurrentUrl());
-		driver.quit();
+		driver.close();
+	
 
 	}
 }

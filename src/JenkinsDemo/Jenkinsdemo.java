@@ -22,7 +22,7 @@ public class Jenkinsdemo {
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		System.out.println(driver.getCurrentUrl());
 		driver.close();
-		driver.close();
+		
 	
 
 	}
